@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100vh;
+    /* background-color: black; */
+}
+
+#back{
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(214, 22, 22); */
+}
+
+#back img{
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+}
+
+#top{
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* background-color: rgb(215, 73, 73); */
+}
+
+#workingarea{
+    position: relative;
+    width: 80%;
+    max-width: 1920px;
+    /* background-color: rgb(49, 46, 46); */
+    height: 100vh;
+    margin: 0 auto;
+    /* border: 1px solid red; */
+}
+
+#nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 40px 0;
+}
+
+#nav img{
+    height: 60px;
+}
+
+#nleft, #nright {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+#nav a{
+    pointer-events: all;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 800;
+     color: whitesmoke;
+     font-family: cursive;
+
+}
+
+#hero{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    display: flex;
+    justify-content: space-between;
+     width: 100%;
+    
+     /* background-color: red; */
+}
+
+#heroleft{
+   min-width: 50%;
+   
+    /* background-color: yellow; */
+}
+
+#heroright{
+    min-width: 25%;
+    
+     /* background-color: rgb(10, 224, 28); */
+ }
+
+ #heroleft .elem{
+    position: relative;
+    height: 7.6vw;
+    /* background-color: red; */
+    overflow: hidden;
+ }
+ #heroleft .elem h1:nth-child(1){
+  top: 0;
+ }
+ #heroleft .elem h1{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    line-height: .9;
+     font-family: cursive;
+    color: whitesmoke;
+    font-weight: 100;
+    font-size: 7.5vw;
+    margin-top: 10px;
+
+ }
+
+ #heroleft button{
+    pointer-events: all;
+     padding: .8vw 3vw;
+     font-size: 2vw;
+     font-family: cursive;
+   margin-top: 2vw;
+   border-radius: 1vw;
+
+ }
+
+ #heroleft button:hover{
+    cursor: pointer;
+    background-color: rgb(108, 120, 130);
+ }
+
+ #heroright{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 17%;
+    color: whitesmoke;
+    font-family: cursive;
+ }
+
+ #heroright p{
+   
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+ }
+ #imagdiv{
+     width: 100%;
+     height: 200px;
+   background-image: url(https://th.bing.com/th/id/OIP.hbr02-N9cLHaHVabkXXuRAHaDT?w=315&h=156&c=7&r=0&o=5&dpr=1.3&pid=1.7);
+   background-size: cover;
+   background-position: center;
+   border-radius: 10px;
+     margin-top: 20px;
+     margin-bottom: 30px;
+ }
+
+ #heroright p:nth-child(3){
+ 
+    margin-bottom: 100px;
+ }
+
+
